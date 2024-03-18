@@ -100,7 +100,7 @@ function SignForm() {
         </div>
       </form>
 
-      <div className="flex flex-col items-center justify-start mt-24 w-full">
+      <div className="flex flex-col items-center justify-start mt-48 w-full">
         <div className="flex flex-row items-center">
           <img
             className="h-[26px] w-[26px] relative object-cover pr-2 "
@@ -115,8 +115,10 @@ function SignForm() {
           </h3>
         </div>
 
-        {/* icon required */}
-        <TextButton buttonText="Sign Up" />
+        <div className="mt-58 w-full">
+          {/* icon required */}
+        <TextButton  buttonText="Sign Up " />
+        </div>
       </div>
     </div>
   );

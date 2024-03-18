@@ -56,11 +56,42 @@
 }
 
 /* Sigh Up */
-.face-ID{
-  color: #2100EC;
+.face-ID {
+  color: #2100ec;
 }
 
-.termcon{
-  color: #FF4085;
+.termcon {
+  color: #ff4085;
 }
 
+/* Verify Page */
+.verifybutton {
+  display: flex;
+  padding: 12px 24px;
+  align-items: center;
+  gap: 8px;
+  border-radius: 100px;
+  border: 1px solid #000;
+  background: #2100ec;
+}
+
+.getstart-img {
+  width: 288.348px;
+  height: 322.001px;
+  flex-shrink: 0;
+}
+.getstart-line {
+  width: 57px;
+  height: 5px;
+}
+
+.getstart-text {
+  color: #000;
+  text-align: center;
+  font-family: "Plus Jakarta Sans";
+  font-size: 32px;
+  font-style: normal;
+  font-weight: 800;
+  line-height: 152.5%; /* 48.8px */
+  letter-spacing: -0.96px;
+}

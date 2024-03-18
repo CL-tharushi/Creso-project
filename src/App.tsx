@@ -1,29 +1,32 @@
-import React from "react";
-import { BrowserRouter as Router, Route, Switch } from "react-router-dom";
-import Login from "./Pages/Login";
-import SignUp from "./Pages/SignUp";
+// import { BrowserRouter as Router, Route } from "react-router-dom";
+// import SignUp from "./Pages/SignUp";
+// import Verify from "./Pages/Verify";
+
+import GetStart from "./Pages/GetStart";
+
+
+
+
+// import Verify from "./Pages/Verify";
 
 function App() {
   return (
-    <Router>
-      <div>
-        <Switch>
-        <Route path="/" exact component={LoginComponent} />
-        <Route path="/SignUp" component={SignUpComponent} />
-        </Switch>
-      </div>
-    </Router>
+    // <Router>
+    //   <div>
+    //     <Route path="/"><Login /></Route>
+    //     <Route path="/SignUp"><SignUp /></Route>
+    //   </div>
+    // </Router>
+    <div>
+     
+      {/* <Login/> */}
+      {/* <SignUp/> */}
+       {/* <Verify/> */}
+       <GetStart/>
+      
+
+    </div>
   );
 }
 
-// Define components to be used in routes
-const LoginComponent: React.FC<RouteProps> = (props) => {
-  return <Login />;
-};
-
-const SignUpComponent: React.FC<RouteProps> = (props) => {
-  return <SignUp />;
-};
-
 export default App;
-
