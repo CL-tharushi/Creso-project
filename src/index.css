@@ -1,0 +1,66 @@
+@import url("https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:ital,wght@0,200..800;1,200..800&display=swap");
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+*,
+::before,
+::after {
+  border-width: 0;
+  font-family: "Plus Jakarta Sans", sans-serif !important;
+}
+
+/* navbar */
+.nav {
+  background: #2100ec;
+  display: flex;
+  justify-content: space-between;
+}
+
+.dropdown {
+  border-radius: 53px;
+  border: 1px solid #fff;
+  background: rgba(255, 255, 255, 0.2);
+}
+.form {
+  border-radius: 100px;
+  border: 1px solid #e5e5f0;
+  background: linear-gradient(
+    292deg,
+    rgba(255, 255, 255, 0.58) 18.31%,
+    rgba(255, 255, 255, 0.45) 110.98%
+  );
+}
+.forgetpassword {
+  color: #ff4085;
+  text-align: center;
+  font-family: "Plus Jakarta Sans";
+  font-size: 12px;
+  font-style: normal;
+  font-weight: 600;
+  line-height: 152.5%; /* 18.3px */
+  letter-spacing: -0.36px;
+}
+
+/* buttons */
+.button {
+  border-radius: 100px;
+  background: #000;
+}
+
+.socialmediaButton {
+  border-radius: 100px;
+  border: 1px solid #000;
+  background: #fff;
+}
+
+/* Sigh Up */
+.face-ID{
+  color: #2100EC;
+}
+
+.termcon{
+  color: #FF4085;
+}
+
