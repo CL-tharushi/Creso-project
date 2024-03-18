@@ -2,7 +2,7 @@ import { ArrowLeftIcon } from "@heroicons/react/24/outline";
 import { useForm } from "react-hook-form";
 import TextButton from "../Button/TextButton";
 import SocialMediaButton from "../Button/SocialMediaButton";
-import { Link } from 'react-router-dom';
+import { Link } from "react-router-dom";
 
 function LoginForm() {
   const {
@@ -11,10 +11,10 @@ function LoginForm() {
   } = useForm();
 
   return (
-    <div className="flex flex-col items-center justify-center w-4/5 p-2 ">
+    <div className="flex flex-col items-center justify-center w-full px-[26px] h-full">
       <div className="flex flex-row items-center justify-start  w-full">
         <ArrowLeftIcon className="item-center justify-center w-5 h-auto text-black m-2 " />
-        <h1 className="text-xl">Login</h1> 
+        <h1 className="text-xl">Login</h1>
       </div>
 
       <form
@@ -65,23 +65,30 @@ function LoginForm() {
               Forgot Password?
             </a>
           </h3>
-          <Link to='/SignUp'>
-          <TextButton buttonText="Sign Up" />
+          <Link to="/SignUp">
+            <TextButton buttonText="Login" className="" />
           </Link>
 
-         
-
-         
+          <div className="w-[180px] border border-black/10 h-[1px] my-[3rem] flex items-center justify-center mx-auto"></div>
 
           {/* <TextButton buttonText="Sign Up" /> */}
           {/* <Button buttonText="Sign Up" icon={<ChevronDownIcon className="w-5 h-auto text-white" />} /> */}
 
           {/* icon apply */}
 
-          <div className="flex flex-col items-center justify-center mt-12">
-            <SocialMediaButton buttonText="Sign with Google" />
-            <SocialMediaButton buttonText="Sign with Twitter" />
-            <SocialMediaButton buttonText="Sign with Apple" />
+          <div className="flex flex-col items-center justify-center mt-12 gap-3">
+            <SocialMediaButton
+              buttonText="Sign with Google"
+              imgUrl="/assets/img/google.png"
+            />
+            <SocialMediaButton
+              buttonText="Sign with Twitter"
+              imgUrl="/assets/img/twitter.png"
+            />
+            <SocialMediaButton
+              buttonText="Sign with Apple"
+              imgUrl="/assets/img/apple.png"
+            />
           </div>
         </div>
       </form>

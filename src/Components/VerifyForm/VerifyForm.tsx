@@ -6,7 +6,7 @@ function VerifyForm() {
     <div className="flex flex-col items-center justify-center w-4/5 p-2 ">
       <div className="flex flex-row items-center justify-start  w-full">
         <ArrowLeftIcon className="item-center justify-center w-5 h-auto text-black m-2 " />
-        <h1 className="text-xl ">Verify</h1>
+        <h1 className="text-xl">Verify</h1>
       </div>
 
       <div className="flex flex-col items-center justify-center w-full mt-8">
@@ -18,19 +18,15 @@ function VerifyForm() {
         </button>
       </div>
 
-       {/* get code  */}
+      {/* get code  */}
       <div className=""></div>
 
       <div className=" verify-endbutton flex  items-center justify-start mt-48 w-full">
-        
-
-      <div className="mt-60 w-full">
+        <div className="mt-60 w-full">
           {/* icon required */}
-        <TextButton  buttonText="Sign Up " />
+          <TextButton buttonText="Sign Up " className="" />
         </div>
       </div>
-
-
     </div>
   );
 }
