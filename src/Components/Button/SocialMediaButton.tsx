@@ -6,7 +6,7 @@ interface ButtonProps {
 
 const SocialMediaButton: React.FC<ButtonProps> = ({ buttonText }) => {
   return (
-    <div className=" flex flex-row items-start justify-center w-full mt-6">
+    <div className=" flex flex-row items-start justify-center w-full mt-4">
       <button className='socialmediaButton border rounded-3xl p-4 w-full text-black'>
         {buttonText}
       </button>
