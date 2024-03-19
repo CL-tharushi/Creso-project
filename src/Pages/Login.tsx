@@ -5,7 +5,7 @@ function Login() {
   return (
     <div className="min-h-screen flex flex-col justify-between h-full">
       <NavBar />
-      <div className="flex item-center justify-center mt-6 h-full">
+      <div className="flex item-center justify-center  h-full">
         <LoginForm />
       </div>
     </div>
