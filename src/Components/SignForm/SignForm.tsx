@@ -117,7 +117,7 @@ function SignForm() {
 
         <div className="mt-58 w-full">
           {/* icon required */}
-        <TextButton  buttonText="Sign Up " />
+        <TextButton  buttonText="Sign Up " className=""  />
         </div>
       </div>
     </div>
