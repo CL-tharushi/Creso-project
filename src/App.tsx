@@ -5,6 +5,9 @@ import GetStart from "./Pages/GetStart";
 import Verify from "./Pages/Verify";
 import Agree from "./Pages/Agree";
 import CreatePassword from "./Pages/CreatePassword";
+import SecureWallet from "./Pages/SecureWallet";
+// import SecureWallet from "./Pages/secureWallet";
+
 
 function App() {
   return (
@@ -16,6 +19,8 @@ function App() {
         <Route path="/Verify" element={<Verify />} />
         <Route path="/Agree" element={<Agree />} />
         <Route path="/CreatePassword" element={<CreatePassword />} />
+        <Route path="/SecureWallet" element={<SecureWallet />} />
+        
       </Routes>
     </BrowserRouter>
   );

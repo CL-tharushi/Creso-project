@@ -3,9 +3,9 @@ import LoginForm from "../Components/LoginForm/LoginForm";
 
 function Login() {
   return (
-    <div className="min-h-screen flex flex-col justify-between h-full">
+    <div className=" flex flex-col justify-between h-full">
       <NavBar />
-      <div className="flex item-center justify-center  h-full">
+      <div className="flex item-center justify-center py-6 h-full">
         <LoginForm />
       </div>
     </div>

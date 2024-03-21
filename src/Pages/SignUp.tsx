@@ -4,9 +4,9 @@ import SignForm from '../Components/SignForm/SignForm'
 
 function SignUp() {
   return (
-    <div>
+    <div className='h-[830px] flex flex-col'>
       <NavBar/>
-      <div className="flex item-center justify-center mt-6">
+      <div className="flex item-center justify-center py-6 h-full">
         <SignForm/>
       </div>
     </div>

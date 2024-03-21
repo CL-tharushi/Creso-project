@@ -14,7 +14,7 @@ function LoginForm() {
     <div className="flex flex-col items-center justify-center w-full px-[26px] h-full">
       <div className="flex flex-row items-center justify-start  w-full">
         <ArrowLeftIcon className="item-center justify-center w-5 h-auto text-black m-2 " />
-        <h1 className="text-xl">Login</h1>
+        <h1 className="text-2xl font-extrabold">Login</h1>
       </div>
 
       <form
@@ -27,7 +27,7 @@ function LoginForm() {
             id="email"
             type="email"
             placeholder="Samuel.HK6@gmail.com"
-            className="form w-full h-12 text-start p-4 mr-3"
+            className="form w-full h-20 text-start p-4 mr-3 text-base text-[#000]"
             {...register("email", {
               required: true,
               pattern: /^[^@ ]+@[^@ ]+\.[^@ .]{2,}$/,
@@ -47,7 +47,7 @@ function LoginForm() {
             id="password"
             type="password"
             placeholder="*********"
-            className="form w-full h-12 text-start p-4 mr-3  "
+            className="form w-full h-20 text-start p-4 mr-3 text-base text-[#000]  "
             {...register("password", {
               required: true,
               pattern: /^[^@ ]+@[^@ ]+\.[^@ .]{2,}$/,

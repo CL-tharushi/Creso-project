@@ -4,9 +4,9 @@ import VerifyForm from "../Components/VerifyForm/VerifyForm"
 
 const Verify = () => {
   return (
-    <div>
+    <div className='h-[830px] flex flex-col'>
       <NavBar/>
-      <div className="flex item-center justify-center mt-6">
+      <div className="flex item-center justify-center py-6 h-full">
         <VerifyForm/>
       </div>
     </div>

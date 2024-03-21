@@ -3,9 +3,9 @@ import AgreeForm from "../Components/AgreeForm/AgreeForm";
 
 function Agree() {
   return (
-    <div className="flex items-center flex-col h-screen justify-between">
+    <div className="flex flex-col justify-between h-full">
       <NavBar />
-      <div className="flex item-center justify-center mt-6 h-full">
+      <div className="flex item-center justify-center py-6 h-full">
         <AgreeForm />
       </div>
     </div>
