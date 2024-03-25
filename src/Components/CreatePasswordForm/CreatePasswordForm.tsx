@@ -28,7 +28,6 @@ function CreatePasswordForm() {
         src="/assets/img/CPline.png"
       />
 
-
       <form
         action=""
         className=" flex flex-col items-center justify-center mt-6 w-full  "
@@ -106,12 +105,10 @@ function CreatePasswordForm() {
           </div>
         </div>
         <div className=" w-full flex items-center justify-center flex-col mt-4">
-        {/* icon required */}
-        <TextButton buttonText="Create New Password " className="" />
+          {/* icon required */}
+          <TextButton buttonText="Create New Password " className="" />
+        </div>
       </div>
-      </div>
-
-      
     </div>
   );
 }

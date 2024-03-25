@@ -18,10 +18,12 @@ function SignForm() {
 
         <form
           action=""
-          className=" flex flex-col items-center justify-center mt-6 w-full  "
+          className=" flex flex-col items-center justify-center mt-6 w-full  gap-6"
         >
-          <div className=" w-full mb-6 ">
-            <h3 className="text-sm p-2 ml-2 ">Email/Phone</h3>
+          <div className=" w-full flex flex-col items-start gap-2.5">
+            <label htmlFor="email" className="text-xs font-semibold px-2 ml-2 ">
+              Email/Phone
+            </label>
             <input
               id="email"
               type="email"
@@ -40,8 +42,13 @@ function SignForm() {
             )}
           </div>
 
-          <div className=" w-full mb-6 ">
-            <h3 className="text-sm p-2 ml-2 ">Password</h3>
+          <div className="w-full flex flex-col items-start gap-2.5">
+            <label
+              htmlFor="password"
+              className="text-xs font-semibold px-2 ml-2 "
+            >
+              Password
+            </label>
             <input
               id="password"
               type="password"
@@ -60,8 +67,13 @@ function SignForm() {
             )}
           </div>
 
-          <div className=" w-full mb-6 ">
-            <h3 className="text-sm p-2 ml-2 ">Confirmed Password</h3>
+          <div className="w-full flex flex-col items-start gap-2.5">
+            <label
+              htmlFor="confirmedpassword"
+              className="text-xs font-semibold px-2 ml-2 "
+            >
+              Confirmed Password
+            </label>
             <input
               id="confirmedpassword"
               type="password"
@@ -81,38 +93,51 @@ function SignForm() {
                 <p className="errorMsg">Password is not valid.</p>
               )}
 
-            <div className="flex flex-row items-center justify-between mt-4">
-              <div className="flex flex-row items-center justify-start">
+            <div className="flex flex-row items-center justify-between mt-4 w-full">
+              <div className="flex flex-row items-center justify-start gap-2">
                 <img
-                  className="h-[26px] w-[26px] relative object-cover pr-2 "
+                  className="h-6 w-6 relative object-cover pr-2 "
                   loading="lazy"
                   alt=""
                   src="/assets/img/Lock.png"
                 />
 
-                <h3 className="text-sm">Authentication Method</h3>
+                <h3 className="text-base font-semibold">
+                  Authentication Method
+                </h3>
               </div>
-              <div className="flex flex-row items-center justify-end">
-                <h3 className="face-ID text-sm">Face ID</h3>
-                <ChevronRightIcon className=" item-center justify-center w-5 h-auto text-black m-2 " />
-              </div>
+              <button className="flex flex-row items-center justify-end gap-2">
+                <span className="text-[#2100ec] text-sm font-semibold">
+                  Face ID
+                </span>
+                <ChevronRightIcon className=" item-center justify-center w-6 h-6 text-black p-1" />
+              </button>
             </div>
           </div>
         </form>
       </div>
-      <div className="flex flex-col items-center justify-start w-full">
+      <div className="flex flex-col items-center justify-start w-full gap-6">
         <div className="flex flex-row items-center">
           <img
-            className="h-[26px] w-[26px] relative object-cover pr-2 "
+            className="h-6 w-6 relative object-cover  mr-2 "
             loading="lazy"
             alt=""
             src="/assets/img/Checkmark.png"
           />
-          <h3 className="text-bace ">I have agree to the Creso<span className=" text-base text-[#FF4085]"><a href="/term and condition"></a>Terms and Conditions</span></h3>
-          
+          <div className="text-base flex items-center w-full gap-[2px]">
+            <span className="text-base -tracking-[0.48px]">
+              I have agree to the Creso
+            </span>
+            <a
+              href="/term and condition"
+              className="text-base -tracking-[0.48px] text-[#FF4085]"
+            >
+              Terms and Conditions
+            </a>
+          </div>
         </div>
 
-        <div className="mt-58 w-full">
+        <div className=" w-full">
           {/* icon required */}
           <TextButton buttonText="Sign Up " className="" />
         </div>

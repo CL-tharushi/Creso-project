@@ -77,14 +77,17 @@ function LoginForm() {
           {/* icon apply */}
 
           <div className="flex flex-col items-center justify-center mt-12 gap-3">
+
             <SocialMediaButton
               buttonText="Sign with Google"
               imgUrl="/assets/img/google.png"
             />
+
             <SocialMediaButton
               buttonText="Sign with Twitter"
               imgUrl="/assets/img/twitter.png"
             />
+            
             <SocialMediaButton
               buttonText="Sign with Apple"
               imgUrl="/assets/img/apple.png"

@@ -6,6 +6,10 @@ import Verify from "./Pages/Verify";
 import Agree from "./Pages/Agree";
 import CreatePassword from "./Pages/CreatePassword";
 import SecureWallet from "./Pages/SecureWallet";
+import RecoveryPharse from "./Pages/RecoveryPharse";
+import ConfirmCode from "./Pages/ConfirmCode";
+import EthereumMainnet from "./Pages/EthereumMainnet";
+import Discover from "./Pages/Discover";
 // import SecureWallet from "./Pages/secureWallet";
 
 
@@ -20,7 +24,10 @@ function App() {
         <Route path="/Agree" element={<Agree />} />
         <Route path="/CreatePassword" element={<CreatePassword />} />
         <Route path="/SecureWallet" element={<SecureWallet />} />
-        
+        <Route path="/RecoveryPharse" element={<RecoveryPharse />} />
+        <Route path="/ConfirmCode" element={<ConfirmCode />} />
+        <Route path="/EthereumMainnet" element={<EthereumMainnet />} />
+        <Route path="/Discover" element={<Discover />} />
       </Routes>
     </BrowserRouter>
   );

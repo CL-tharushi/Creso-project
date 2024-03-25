@@ -1,5 +1,6 @@
 import { useState } from "react";
 import { LockClosedIcon, ShieldCheckIcon, CheckBadgeIcon } from "@heroicons/react/24/outline";
+import Step1 from "./Images/step1";
 
 function MultipleStepForm() {
   const steps = ["Create Password", "Secure Waller", "Confirm Code"];
@@ -12,7 +13,7 @@ function MultipleStepForm() {
     }
   };
 
-  const icons = [<LockClosedIcon className="w-7" />, <ShieldCheckIcon className="w-7" />, <CheckBadgeIcon className="w-7" />];
+  const icons = [<Step1/> , <ShieldCheckIcon className="w-7" />, <CheckBadgeIcon className="w-7" /> ];
 
   return (
     <>
@@ -23,8 +24,8 @@ function MultipleStepForm() {
             onClick={() => handleStepClick(i + 1)}
             className={`step-item ${currentStep === i + 1 && "active"} ${(i + 1 < currentStep || complete) && "complete"}`}
           >
-            <div className={`border rounded-full w-16 h-16 bg-white overflow-hidden z-[2] flex items-center justify-center ${i === 0 && currentStep === 1 && "bg-yellow-300"} ${(i !== 0 || currentStep !== 1) && "opacity-50"}`}>
-              {i + 1 < currentStep || complete ? <LockClosedIcon className="w-7" /> : icons[i]}
+            <div className={`border rounded-full w-16 h-16 bg-white overflow-hidden z-[2] flex items-center justify-center ${i === 0 && currentStep === 1 && "!bg-[#D0F500]"} ${(i !== 0 || currentStep !== 1) && ""}`}>
+              {i + 1 < currentStep || complete ? <Step1/> : icons[i]}
             </div>
             <p className="text-black text-sm font-bold mt-3">{step}</p>
           </div>

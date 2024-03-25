@@ -14,7 +14,7 @@ const OTPInput: React.FC<OTPInputProps> = ({ length }) => {
           key={index}
           type="text"
           maxLength={1}
-          className="w-12 h-12 p-3 rounded-full border-2 border-[#E5E5F0] text-center text-2xl font-semibold focus:outline-blue "
+          className="w-12 h-12 rounded-full border-2 border-[#E5E5F0] text-center text-2xl font-semibold focus:outline-blue "
         />
       ))}
     </div>
