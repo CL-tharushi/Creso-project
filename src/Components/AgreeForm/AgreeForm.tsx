@@ -16,19 +16,10 @@ function AgreeForm() {
        </div>
 
        <div className="flex flex-col items-center justify-center w-full mt-6 gap-3">
-         <AgreeButton
-           buttonText="Always allow you to opt-out via Settings"
-           className=""
-         />
-         <AgreeButton
-           buttonText="Send anonymized click and pageview events"
-           className=""
-         />
-         <AgreeButton
-           buttonText="Never Collect your full IP address"
-           className=""
-         />
-         <AgreeButton buttonText="Never sell data. Ever!" className="" />
+       <AgreeButton buttonText="Always allow you to opt-out via Settings" className=" " imageSrc="/assets/img/yellow.png" />
+       <AgreeButton buttonText="Send anonymized click and pageview events" className=" " imageSrc="/assets/img/yellow.png" />
+       <AgreeButton buttonText="Never Collect your full IP address" className=" " imageSrc="/assets/img/red.png" />
+       <AgreeButton buttonText="Never sell data. Ever!" className=" " imageSrc="/assets/img/red.png" />
        </div>
 
        <div className="flex mt-6 items-center justify-center">

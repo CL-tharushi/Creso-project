@@ -34,7 +34,7 @@ function CreatePasswordForm() {
       >
         <div className=" w-full mb-6 ">
           <div className="flex flex-row items-center justify-between">
-            <h3 className="text-sm font-semibold p-2 ml-2 ">New Password</h3>
+            <label htmlFor="newpassword" className="text-sm font-semibold p-2 ml-2 ">New Password</label>
             <h3 className="text-xs font-medium  p-2 ml-2 text-[#FF4085] ">
               Show
             </h3>
@@ -59,9 +59,9 @@ function CreatePasswordForm() {
 
         <div className=" w-full mb-6 ">
           <div className="flex flex-row items-center justify-between">
-            <h3 className="text-sm font-semibold p-2 ml-2 ">
+            <label htmlFor="password" className="text-sm font-semibold p-2 ml-2 ">
               Confirm Password
-            </h3>
+            </label>
             <h3 className="text-xs font-medium  p-2 ml-2 text-[#FF4085] ">
               Show
             </h3>

@@ -1,8 +1,8 @@
-import { ArrowLeftIcon } from "@heroicons/react/24/outline";
+import { ArrowLeftIcon, ChevronRightIcon } from "@heroicons/react/24/outline";
 import { useForm } from "react-hook-form";
-import TextButton from "../Button/TextButton";
 import SocialMediaButton from "../Button/SocialMediaButton";
 import { Link } from "react-router-dom";
+import Icon from "../Button/Icon";
 
 function LoginForm() {
   const {
@@ -22,7 +22,8 @@ function LoginForm() {
         className=" flex flex-col items-center justify-center mt-6 w-full  "
       >
         <div className=" w-full mb-6 ">
-          <h3 className="text-sm p-2 ml-2 ">Email/Phone</h3>
+        htmlFor="confirmedpassword"
+          <label htmlFor="email" className="text-sm p-2 ml-2 ">Email/Phone</label>
           <input
             id="email"
             type="email"
@@ -42,7 +43,7 @@ function LoginForm() {
         </div>
 
         <div className=" w-full mb-6 ">
-          <h3 className="text-sm p-2 ml-2 ">Password</h3>
+          <label htmlFor="password"  className="text-sm p-2 ml-2 ">Password</label>
           <input
             id="password"
             type="password"
@@ -66,7 +67,8 @@ function LoginForm() {
             </a>
           </h3>
           <Link to="/SignUp">
-            <TextButton buttonText="Login" className="" />
+           
+            <Icon buttonText="Login" className="" icon={ChevronRightIcon} />
           </Link>
 
           <div className="w-[180px] border border-black/10 h-[1px] my-[3rem] flex items-center justify-center mx-auto"></div>

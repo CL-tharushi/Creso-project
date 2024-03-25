@@ -1,6 +1,6 @@
 import { useForm } from "react-hook-form";
 import { ArrowLeftIcon, ChevronRightIcon } from "@heroicons/react/24/outline";
-import TextButton from "../Button/TextButton";
+import Icon from "../Button/Icon";
 
 function SignForm() {
   const {
@@ -116,6 +116,7 @@ function SignForm() {
           </div>
         </form>
       </div>
+      
       <div className="flex flex-col items-center justify-start w-full gap-6">
         <div className="flex flex-row items-center">
           <img
@@ -125,7 +126,7 @@ function SignForm() {
             src="/assets/img/Checkmark.png"
           />
           <div className="text-base flex items-center w-full gap-[2px]">
-            <span className="text-base -tracking-[0.48px]">
+            {/* <span className="text-base -tracking-[0.48px]">
               I have agree to the Creso
             </span>
             <a
@@ -133,13 +134,19 @@ function SignForm() {
               className="text-base -tracking-[0.48px] text-[#FF4085]"
             >
               Terms and Conditions
-            </a>
+            </a> */}
+            <h3 className=" item-center justify-center text-base font-semibold -tracking-[0.48px] ">
+            I have agree to the Creso {" "}
+              <a href="/term and condition"><span className="text-base font-semibold text-[#FF4085]">
+              Terms and Conditions
+              </span></a>
+            </h3>
           </div>
         </div>
 
         <div className=" w-full">
           {/* icon required */}
-          <TextButton buttonText="Sign Up " className="" />
+          <Icon buttonText="SignUp" className="" icon={ChevronRightIcon} />
         </div>
       </div>
     </div>
