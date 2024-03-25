@@ -2,9 +2,7 @@ import React from 'react'
 
 function showHideForm() {
   return (
-    <div>
-      
-    </div>
+    <div className="">welcome</div>
   )
 }
 
