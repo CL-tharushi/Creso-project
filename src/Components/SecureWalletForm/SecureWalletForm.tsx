@@ -2,6 +2,7 @@ import { ArrowLeftIcon } from "@heroicons/react/24/outline";
 import TextButton from "../Button/TextButton";
 import MultipleStepForm from "../MultipleStepForm/MultipleStepForm";
 import NonFill from "../Button/NonFill";
+import VideoIcon from "../VideoIcon/VideoIcon";
 
 function SecureWalletForm() {
   return (
@@ -30,18 +31,10 @@ function SecureWalletForm() {
       </div>
 
       <div className="flex item-center justify-center border w-96 h-32 rounded-3xl bg-[#D0F500]">
-      <div className=" flex items-center justify-center ">
-        <img
-          className="flex items-center justify-center  w-[48px] h-[48px]  "
-          loading="lazy"
-          alt="video icon"
-          src="/assets/img/video.png"
-        />
-      </div>
+      <VideoIcon/>
       </div>
 
       <div className=" w-full flex items-center justify-center flex-col mt-4 gap-2">
-        {/* icon required */}
         <TextButton buttonText="Create New Password " className="" />
         <NonFill buttonText="Remind me later" className="" />
       </div>

@@ -1,11 +1,11 @@
 
 
-const Step1 = () => {
+const step1 = () => {
   return (
   <>
-  <img src="/assets/img/Lock.png" alt="lock" className=""/>
+  <img src="/assets/img/step1.png" alt="lock" className=""/>
   </>
   )
 }
 
-export default Step1
+export default step1
