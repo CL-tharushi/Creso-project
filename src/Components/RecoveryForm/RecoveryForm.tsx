@@ -12,14 +12,14 @@ const RecoveryForm: React.FC = () => {
       const index = row * numCols + col;
       gridItems.push(
         <div key={index} className="grid-item text-xs text-white font-medium">
-          <div>{index + 1}  </div>
+          <div>{index + 1}</div>
         </div>
       );
     }
   }
 
   return (
-    <div className="grid grid-cols-3 gap-4 ">
+    <div className="grid grid-cols-3 gap-4 relative">
       {gridItems.map((item, index) => (
         <div key={index}>{item}</div>
       ))}

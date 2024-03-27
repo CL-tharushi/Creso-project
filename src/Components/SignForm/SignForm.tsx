@@ -3,6 +3,10 @@ import { ArrowLeftIcon, ChevronRightIcon } from "@heroicons/react/24/outline";
 import Icon from "../Button/Icon";
 
 function SignForm() {
+  const goback = () => {
+    window.history.back();
+  };
+
   const {
     register,
     formState: { errors },
@@ -12,7 +16,10 @@ function SignForm() {
     <div className="flex flex-col items-center justify-between px-[26px] w-full h-full">
       <div className="flex flex-col w-full  h-full">
         <div className="flex flex-row items-center justify-start  w-full">
-          <ArrowLeftIcon className="item-center justify-center w-5 h-auto text-black m-2 " />
+          <ArrowLeftIcon
+            onClick={goback}
+            className="item-center justify-center w-5 h-auto text-black m-2 "
+          />
           <h1 className="text-2xl font-extrabold">Sign Up</h1>
         </div>
 
@@ -116,7 +123,7 @@ function SignForm() {
           </div>
         </form>
       </div>
-      
+
       <div className="flex flex-col items-center justify-start w-full gap-6">
         <div className="flex flex-row items-center">
           <img
@@ -136,10 +143,12 @@ function SignForm() {
               Terms and Conditions
             </a> */}
             <h3 className=" item-center justify-center text-base font-semibold -tracking-[0.48px] ">
-            I have agree to the Creso {" "}
-              <a href="/term and condition"><span className="text-base font-semibold text-[#FF4085]">
-              Terms and Conditions
-              </span></a>
+              I have agree to the Creso{" "}
+              <a href="/term and condition">
+                <span className="text-base font-semibold text-[#FF4085]">
+                  Terms and Conditions
+                </span>
+              </a>
             </h3>
           </div>
         </div>

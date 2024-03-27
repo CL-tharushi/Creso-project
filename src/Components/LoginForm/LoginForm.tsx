@@ -22,7 +22,6 @@ function LoginForm() {
         className=" flex flex-col items-center justify-center mt-6 w-full  "
       >
         <div className=" w-full mb-6 ">
-        htmlFor="confirmedpassword"
           <label htmlFor="email" className="text-sm p-2 ml-2 ">Email/Phone</label>
           <input
             id="email"

@@ -4,6 +4,11 @@ import TextButton from "../Button/TextButton";
 import MultiStepForm from "../MultipleStepForm/MultipleStepForm";
 
 function CreatePasswordForm() {
+
+  const goback = () => {
+    window.history.back();
+  };
+  
   const {
     register,
     formState: { errors },
@@ -12,7 +17,7 @@ function CreatePasswordForm() {
   return (
     <div className="flex flex-col items-center justify-between px-[26px] w-full h-full">
       <div className="flex flex-row items-center justify-start  w-full">
-        <ArrowLeftIcon className="item-center justify-center w-5 h-auto text-black m-2 " />
+        <ArrowLeftIcon onClick={goback} className="item-center justify-center w-5 h-auto text-black m-2 " />
         <h1 className="text-2xl font-extrabold">Create EOA Wallet</h1>
       </div>
 
